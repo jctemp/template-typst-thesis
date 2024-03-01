@@ -5,6 +5,7 @@
   degree: "Bachelor",
   field: "Angewandte Informatik",
   fontSize: 12pt,
+  doubleSided: true,
   author: (
     name: "Max Mustermann",
     role: "Autor",

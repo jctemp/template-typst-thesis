@@ -13,9 +13,14 @@
     title: details.title,
     author: details.author.name,
   )
+
   set page(
     paper: "a4",
-    margin: (x: 25mm, y: 35mm),
+    margin: 
+      if details.doubleSided 
+        {(y: 35mm, inside: 35mm, outside: 18mm)}
+      else 
+        {(x: 25mm, y: 35mm)},
     header-ascent: 10mm,
     footer-descent: 10mm,
   ) 
@@ -44,7 +49,7 @@
 
   cover(details)
 
-  set page(numbering: "I")
+  set page(numbering: "I", number-align: left)
   counter(page).update(1) 
 
   disclaimer(details)

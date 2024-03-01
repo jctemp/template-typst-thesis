@@ -3,6 +3,10 @@
 
 #show: body => project(details, body)
 
+= Example with Lorem Ipsum
+
+#lorem(450)
+
 = Introduction
 #rect(
   width: 100%,
